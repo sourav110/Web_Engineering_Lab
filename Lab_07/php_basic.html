@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHP Basic</title>
+</head>
+<body>
+
+	<ul>
+		<?php 
+
+		// $text = "You're so Cruel.";
+		// echo "Hello Cruel World, " .$text;
+
+
+			$color = ["white", "green", "red"];
+			for($i = 0; $i < sizeof($color); $i++){
+			?>
+
+			<li id= "checked"><?php echo $color[$i]; ?></li>
+			<?php 
+				} 
+			?>
+
+	</ul>
+
+	<p>Inserting</p>
+
+	<?php
+		$num = [1, 2, 3, 5];
+		array_push($num, 4);
+		sort($num);
+		print_r($num);
+	?>
+
+
+	<p>Checking</p>
+	<?php
+		$arr = "Hello cruel World";
+		if (strpos($arr, "cruel")){
+			echo "exists\n";
+		}
+	?>
+	
+</body>
+</html>

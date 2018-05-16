@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Div Template</title>
+
+	<style>	
+			#container {
+				width: 980px;
+				padding-right: 0px;
+				padding-left: 0px;
+				margin-right: auto;
+				margin-left: auto;
+				border: 2px solid black;
+			}
+
+			#header{
+				background-color: lightblue;
+				width:100%;
+				height:200px;
+				text-align: center;
+				border: 1px solid black;
+			}
+
+			#logo{
+				float: left;
+				background-color: lightgray;
+				width:20%;
+				height:200px;
+				text-align: center;
+				border: 1px solid black;
+			}
+
+			#banner{
+				background-color: red;
+				width: 100%;
+				height:200px;
+				text-align: center;
+				border: 1px solid black;
+			}
+
+
+			#menu{
+				background-color: blue;
+				width:100%;
+				height:50px;
+				text-align: center;
+				border: 1px solid black;
+			}
+
+			#sidebar-left{
+				float:left;
+				width:24.5%;
+				background-color: red;
+				border: 1px solid black;
+			}
+
+			#main{
+				float:left;
+				width:50%;
+				background-color: lightgray;
+				border: 1px solid black;
+			}
+
+			#sidebar-right{
+				/*float:left;*/
+				width:100%;
+				background-color: red;
+				border: 1px solid black;
+			}
+			
+			#footer{
+				clear:both;
+				height: 50px;
+				width: 100%;
+				text-align: center;
+				background-color: lightblue;
+				border: 1px solid black;
+			}
+			#sidebar-left, #main, #sidebar-right{
+				min-height: 400px;
+				text-align: center;				
+			}
+		</style>
+</head>
+
+<body>
+	<div id="container">
+		<!-- <div id="header">Header
+			<div class="logo">Logo</div>
+			<div class="banner">Banner</div>
+		</div> -->
+		<div id="logo">Logo</div>
+		<div id="banner">Banner</div>
+		<div id="menu">Menu</div>
+		<div id="sidebar-left">Left Sidebar</div>
+		<div id="main">Main Content</div>
+		<div id="sidebar-right">Right Sidebar</div>
+		<div id="footer">Footer</div>
+	</div>
+		
+</body>
+</html>
